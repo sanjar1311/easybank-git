@@ -19,10 +19,10 @@ body {
   color: #222;
 }
 
-img {
+/* img {
   max-width: 100%;
   height: auto;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -98,8 +98,9 @@ img {
 }
 
 .request-link {
-  background-color: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+  background-image: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
   border-radius: 22px;
+  transition: transform .4s ease;
 }
 .request {
   color: #fff;
@@ -112,9 +113,11 @@ img {
   line-height: 28px;
   padding: 8px 36px 8px 33px;
   display: block; 
+  
 }
 .request:hover {
-  background-color:  #75e498;
+  transform: scale(1.1);
+  background-image: linear-gradient(135deg, #84eca0 0%, #7ed6ec 99.58%);
   border-radius: 22px;
   
 }
